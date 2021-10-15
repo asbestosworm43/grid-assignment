@@ -1,0 +1,184 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: repeat(6, 212px);
+    grid-template-rows: repeat(12, 60px);
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+    grid-template-areas:
+    "first first second second third third"
+    "first first second second third third"
+    "first first second second fourth fourth"
+    "fifth fifth second second fourth fourth"
+    "fifth fifth second second sixth sixth"
+    "fifth fifth second second sixth sixth"
+    "seventh seventh eight ninth ninth tenth"
+    "seventh seventh eight ninth ninth tenth"
+    "seventh seventh eleventh ninth ninth tenth"
+    "seventh seventh eleventh ninth ninth tenth"
+    "banner banner banner banner banner banner"
+    "banner banner banner banner banner banner";
+
+    width: 1440px;
+    height: 900px;
+    /*background-color: #11012d;*/
+    box-shadow: 4px 4px 4px #000000;
+}
+/*
+
+These are all the atempts that i went through.... uugh
+
+    display: grid;
+
+    grid-template-areas: 
+    "first first second second .     .     "
+    "first first second second third third"
+    "fifth fifth second second fourth fourth"
+    "fifth fifth second second sixth sixth"
+    "seventh seventh .     ninth ninth tenth"
+    "seventh seventh eight ninth ninth tenth"
+    "seventh seventh eleventh ninth ninth tenth"
+    "banner banner banner banner banner banner"
+    "banner banner banner banner banner banner";
+
+
+    "first first second second .     .     "
+    "first first second second third third"
+    "fifth fifth second second fourth fourth"
+    "fifth fifth second second sixth sixth"
+    "seventh seventh .     ninth ninth tenth"
+    "seventh seventh eight ninth ninth tenth"
+    "seventh seventh eleventh ninth ninth tenth"
+    "banner banner banner banner banner banner"
+    "banner banner banner banner banner banner"
+
+
+    "first first second second third third"
+    "first first second second third third"
+    "first first second second fourth fourth"
+    "fifth fifth second second fourth fourth"
+    "fifth fifth second second sixth sixth"
+    "fifth fifth second second sixth sixth"
+    "seventh seventh eight ninth ninth tenth"
+    "seventh seventh eleventh ninth ninth tenth"
+    "banner banner banner banner banner banner"
+
+    "first first first first first first second second second second second second third third third third third third"
+    "first first first first first first second second second second second second third third third third third third"
+    "first first first first first first second second second second second second third third third third third third"
+    "first first first first first first second second second second second second fourth fourth fourth fourth fourth fourth"
+    "first first first first first first second second second second second second fourth fourth fourth fourth fourth fourth"
+    "fifth fifth fifth fifth fifth fifth second second second second second second fourth fourth fourth fourth fourth fourth"
+    "fifth fifth fifth fifth fifth fifth second second second second second second fourth fourth fourth fourth fourth fourth"
+    "fifth fifth fifth fifth fifth fifth second second second second second second sixth sixth sixth sixth sixth sixth"
+    "fifth fifth fifth fifth fifth fifth second second second second second second sixth sixth sixth sixth sixth sixth"
+    "fifth fifth fifth fifth fifth fifth second second second second second second sixth sixth sixth sixth sixth sixth"
+    "seventh seventh seventh seventh seventh seventh eigth eigth eigth eigth tenth tenth tenth tenth tenth tenth eleventh eleventh"
+    "seventh seventh seventh seventh seventh seventh eigth eigth eigth eigth tenth tenth tenth tenth tenth tenth eleventh eleventh"
+    "seventh seventh seventh seventh seventh seventh eigth eigth eigth eigth tenth tenth tenth tenth tenth tenth eleventh eleventh"
+    "seventh seventh seventh seventh seventh seventh eigth eigth eigth eigth tenth tenth tenth tenth tenth tenth eleventh eleventh"
+    "seventh seventh seventh seventh seventh seventh nineth ninth nineth ninth tenth tenth tenth tenth tenth tenth eleventh eleventh"
+    "seventh seventh seventh seventh seventh seventh nineth ninth nineth ninth tenth tenth tenth tenth tenth tenth eleventh eleventh"
+    "seventh seventh seventh seventh seventh seventh nineth ninth nineth ninth tenth tenth tenth tenth tenth tenth eleventh eleventh"
+
+
+    "first first first second second second third third third"
+    "first first first second second second third third third"
+    "first first first second second second fourth fourth fourth"
+    "fifth fifth fifth second second second fourth fourth fourth"
+    "fifth fifth fifth second second second sixth sixth sixth"
+    "fifth fifth fifth second second second sixth sixth sixth"
+    "seventh seventh seventh eigth eigth tenth tenth tenth eleventh"
+    "seventh seventh seventh eigth eigth tenth tenth tenth eleventh"
+    "seventh seventh seventh nineth ninth tenth tenth tenth eleventh"
+    "seventh seventh seventh nineth ninth tenth tenth tenth eleventh"
+
+    "first first second second third third"
+    "first first second second third third"
+    "fifth first second second fourth fourth"
+    "fifth fifth second second fourth fourth"
+    "fifth fifth second second sixth sixth"
+    "fifth fifth second second sixth sixth"
+    "seventh seventh eight ninth ninth tenth"
+    "seventh seventh eight ninth ninth tenth"
+    "seventh seventh eleventh ninth ninth tenth"
+    "seventh seventh eleventh ninth ninth tenth"
+    "banner banner banner banner banner banner"
+    "banner banner banner banner banner banner"
+*/
+
+
+.grid-element {
+    border: 1px solid;
+    position: relative;
+}
+
+.first {
+    grid-area: first;
+    background-color: #007F5F; 
+}
+
+.second {
+    grid-area: second;
+    background-color: #80B918;
+}
+
+.third {
+    grid-area: third;
+    background-color: #DDDF00;
+}
+
+.fourth {
+    grid-area: fourth;
+    background-color: #EEEF20;
+}
+
+.fifth {
+    grid-area: fifth;
+    background-color: #2B9348;
+}
+
+.sixth {
+    grid-area: sixth;
+    background-color: #FFFF3F;
+}
+
+.seventh {
+    grid-area: seventh;
+    background-color: #55A630;
+}
+
+.eight {
+    grid-area: eight;
+    background-color: #AACC00;
+}
+
+.ninth {
+    grid-area: ninth;
+    background-color: #D4D700;
+}
+
+.tenth {
+    grid-area: tenth;
+    background-color: #007F5F;
+}
+
+.eleventh {
+    grid-area: eleventh;
+    background-color: #BFD200;
+}
+
+.banner {
+    grid-area: banner;
+    display: flex;
+    align-items: center;
+    background-color: #9BC1BC;
+    font-size: 64px;
+    font-weight: bolder;
+}
+
